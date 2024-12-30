@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Business Card Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class = "header">
+		<h1 class = "headText">Student Business Card Builder</h1>
+	</div>
+  <form class = "inputArea">
+    <input id="InputName" type="text" name="name" placeholder="Name"><br><br><br>
+    <input id="InputJob" type="text" name="job-title" placeholder="Major"><br><br><br>
+    <input id="InputPhone" type="text" name="phone" placeholder="Phone number"><br><br><br>
+    <input id="InputMail" type="email" name="email" placeholder="E-mail"><br><br><br>
+    <button class = "positionButton" id="submitCreate" type="submit">Create</button>
+    <div class="colours">
+      <button class="blue" type="button">Blue</button>
+      <button class="yellow" type="button">Yellow</button>
+    </div>
+  </form>
+
+	<img class = "pic" src = "./images/logo.png">
+  <div class="biz-card">
+	
+    <div class="heading">
+      <p id="name">Student Name</p>
+      <p id="job-title">Major</p>
+	  <p id="studentLine">Student</p> 
+    </div>
+    <div class="contact">
+      <ul>
+        <li id="phone">123 456 7891</li>
+        <li id="email" class="right-align"><a id="email-link">Email</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="mine.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome!</h1>
+        <p>Hello, I’m Liz Stoltz — a passionate problem-solver and creative thinker with a love for building innovative solutions through code. From crafting dynamic web experiences to exploring challenging programming puzzles, I bring curiosity and dedication to every project. Let's create something amazing together!</p>
+        <img src="Profile.jpg" alt="Your Profile Photo" class="profile-photo">
+    </section>
+
+    <section id="projects">
+        <div class="project">
+            <div class="project-content">
+                <h3><a href="projectGuessNumber.html" target="_blank">GUESS THE NUMBER</a></h3>
+                <p>A short and easy game of guessing a random umber between 0 and 100.</p>
+            </div>
+            <div class="project-image">
+                <img src="guess.JPG" alt="Screenshot of Gess The Number">
+            </div>
+        </div>
+    
+        <div class="project reverse">	
+            <!-- <div class="project-image">
+                <img src="calculator.jpg" alt="Screenshot of Calculator"> 
+				
+            </div> -->
+			
+			<div>
+				<iframe src="./cal/calculator.html" width="100%" height="550px" style="border: none;"></iframe>
+			</div>		
+			
+            <div class="project-content">
+                <h3><a href="projectCalculator.html" target="_blank">CALCULATOR</a></h3>
+                <p>A simple calculator app for basic operations.</p>
+            </div>
+        </div>
+    
+        <div class="project">
+            <div class="project-content">
+                <h3><a href="projectToDoList.html" target="_blank">TO-DO LIST</a></h3>
+                <p>An app to help you keep track of everything you need to do.</p>
+            </div>
+            <div class="project-image">
+                <img src="todo.JPG" alt="Screenshot of To Do List">
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-description">
+                <h2>Get In Contact</h2>
+                <p>
+                    I'd love to hear from you! Whether you have a question, want to discuss a project, or just want to say hello, feel free to reach out.
+                </p>
+            </div>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

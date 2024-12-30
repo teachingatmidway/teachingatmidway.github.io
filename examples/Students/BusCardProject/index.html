@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Card Builder</title>
+<link rel="stylesheet" href="style.css"></link>  
+
+</head>
+<body>
+  <div class="container">
+  <h1>Business Card Builder</h1> <!-- Specify title-->
+  <form>
+    <input id="InputName" type="text" name="name" placeholder="Name"> 
+    <input id="InputJob" type="text" name="job-title" placeholder="Occupation"> 
+    <input id="InputPhone" type="text" name="phone" placeholder="Phone number"> 
+    <input id="InputMail" type="email" name="email" placeholder="E-mail"> 
+    <button id="submitCreate" type="submit">Create</button> 
+    <div class="colours">
+	  <button class="blue" type="button">Blue</button>
+      <button class="yellow" type="button">Yellow</button>
+	  <button class="gray" type="button">Gray</button>
+	  <button class="green" type="button">Green</button>
+	  <button class="pink" type="button">Pink</button>
+    </div>
+  </form>
+  </div>
+
+  <div class="biz-card">
+    <div class="heading">
+      <p id="name">Name</p>
+      <p id="job-title">Occupation</p>
+    </div>
+    <div class="contact">
+      <ul>
+        <li id="phone">Phone Number</li>
+        <li id="email" class="right-align">Email</li> 
+      </ul>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body><!-- The closing tags for the <body> elements-->
+</html> <!-- The closing tags for the <html> elements-->

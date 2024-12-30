@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CSE-410 Project1</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+	<div class="iphone">
+		<div class="logo-container">
+			<img src="logo.jpeg" alt="MidwayU-Logo">
+		</div>
+		<div class="screen">
+			<h2>CSE-410 Project1</h2>
+			<label>Username</label>
+			<input id="username" type="text" name="username" placeholder="Username" required>
+			<label>Password</label>
+			<input id="pass" type="password" name="password" placeholder="Password" required>
+			
+			<p id="err_message" style="color:red"></p>
+			<button onclick="login()">Log In</button>
+			<div id="spinner" class="spinner"></div>
+			<div id="output" class="handwriting"> </div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+	</body>
+</html>
