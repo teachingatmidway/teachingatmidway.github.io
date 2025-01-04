@@ -177,3 +177,10 @@ ftCode {
         opacity: 1;
     }
 }
+
+#note {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px 8px gray, 10px 10px 8px gray;
+  margin: 10px;
+}
