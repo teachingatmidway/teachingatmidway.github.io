@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display-container">
+            <div id="display" class="display"></div>
+            <div id="result" class="result"></div>
+        </div>
+        <div class="buttons-container">
+            <button class="button" onclick="handlePress('1')">1</button>
+            <button class="button" onclick="handlePress('2')">2</button>
+            <button class="button" onclick="handlePress('3')">3</button>
+            <button class="button operator" onclick="handlePress('/')">/</button>
+
+            <button class="button" onclick="handlePress('4')">4</button>
+            <button class="button" onclick="handlePress('5')">5</button>
+            <button class="button" onclick="handlePress('6')">6</button>
+            <button class="button operator" onclick="handlePress('*')">*</button>
+
+            <button class="button" onclick="handlePress('7')">7</button>
+            <button class="button" onclick="handlePress('8')">8</button>
+            <button class="button" onclick="handlePress('9')">9</button>
+            <button class="button operator" onclick="handlePress('-')">-</button>
+
+            <button class="button clear" onclick="handlePress('C')">C</button>
+            <button class="button" onclick="handlePress('0')">0</button>
+            <button class="button operator" onclick="handlePress('=')">=</button>
+            <button class="button operator" onclick="handlePress('+')">+</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

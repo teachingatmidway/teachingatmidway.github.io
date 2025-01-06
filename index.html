@@ -1,0 +1,944 @@
+<!-- For Internal Communications Purpose and Please Do Not Distribute.-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"><base target="_blank">
+    <title>Avatar and Singer</title>
+    <meta name="description" content="A set of slides for a course on Introduction to Cybersecurity">
+    <meta name="author" content="Xinxing Wu">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="./reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="./reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="./reveal.js/dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="./ics.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="./reveal.js/plugin/highlight/zenburn.css">
+	<link rel="stylesheet" href="./css/style.css">
+	
+    <!--[if lt IE 9]>
+	<script src="./reveal.js/lib/js/html5shiv.js"></script>
+	<![endif]-->
+	<script>
+
+  </script>
+
+
+
+
+  </head>
+
+  <body onload="startTime()">
+    <div class="reveal">
+	  <p><img src="images/midwaylogo.png"  align="left" height="8%" width="10%" style="vertical-align:left;margin:-15px 5px"><div style="color:white;font-size: 20px; vertical-align:left;margin:-1% 0%" align="right" id="realtimeclock"></div></p>
+      <div class="slides">
+
+
+<section data-markdown id="cover"><textarea data-template>
+<p class='titlep'>&nbsp;</p>
+
+# Avatar and Singer
+
+<p class='titlep'>&nbsp;</p>
+
+<!--<p class="blink" style="color:blue;font-size:28px;"><a href="https://teachingatmidway.github.io/">https://teachingatmidway.github.io/</a></p>-->
+<p style="color:blue;font-size:28px;"><a href="https://teachingatmidway.github.io/">👉 https://teachingatmidway.github.io/</a></p>
+<p class='titlep'>&nbsp;</p>
+<p class='titlep'>&nbsp;</p>
+<p class='titlep'>&nbsp;</p>
+<hr>
+<p style="font-size:35%;" align="left">Note: All local work can be reproduced on the CPU, no GPU required.</p>
+</textarea></section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section data-markdown><textarea data-template>
+# Outline
+
+[<p class="hover-underline-animation">Tool 1: Class Avatar</p>](#/tool1)
+
+[<p class="hover-underline-animation">Tool 2: Syllabus Singer</p>](#/tool2)
+
+[<p>Pros and cons</p>](#/pc)
+</textarea></section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown id="tool1" class="center"><textarea data-template>
+## Tool 1: Class Avatar
+</textarea></section>
+
+</textarea></section>
+
+</section>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+#### A summer course
+<iframe src=".\examples\W1\slides.html" style="border:5px solid yellow;" height="600" width="800" title="A summer course"></iframe>
+
+<div class="popup" onclick="myFunction1()"><p class="blink" style="font-size:12px;"><spanBYMix>Note</spanBYMix></p> <span class="popuptext" id="myPopup1" STYLE="font-size:12px">Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist.</span></div> 
+</textarea></section>
+
+</section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+#### Clone voice & Speaking avatar
+
+<div>
+<img src="images/ancient.jpg"  align="center" height="180" width="140">
+<img src="images/gaussian.jpg"  align="center" height="180" width="140">
+<img src="images/hilbert.jpg"  align="center" height="180" width="220">
+<img src="images/turing.jpg"  align="center" height="180" width="140">
+<img src="images/loki.jpg"  align="center" height="180" width="200">
+</div>
+
+<div>
+<video width="140" height="180" controls>
+  <source src="./videos/ancient.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<video width="140" height="180" controls>
+  <source src="./videos/gaussian.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<video width="220" height="250" controls>
+  <source src="./videos/hilbert.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<video width="140" height="180" controls>
+  <source src="./videos/turing.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<video width="200" height="230" controls>
+  <source src="./videos/loki.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+</div>
+
+<div class="popup" onclick="myFunction2()"><p class="blink" style="font-size:12px;"><spanBYMix>Note</spanBYMix></p> <span class="popuptext" id="myPopup2" STYLE="font-size:12px">From left to right: Reconstructed face of ancient human; Carl Friedrich Gauss (April 30, 1777 – February 23, 1855) was a German mathematician and scientist; David Hilbert (January 23, 1862 - February 14, 1943) was a German mathematician; Alan Turing (June 23, 1912 - June 7, 1954) was a British mathematician and logician; Loki is a god in Norse mythology.</span></div> 
+
+
+
+
+<p class='titlep'>&nbsp;</p>
+<div class="wrapper nine">
+        <div>
+            <h3 class="rotate">
+                <span>C</span>
+                <span>0</span>
+                <span>D</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+            </h3>
+        </div>
+</div>
+
+<div id="note">
+!gdown --id 1cdsZRZrn9X1eDAD6iN5tXmv4EG7v1a4y
+<div>
+
+
+<p class='titlep'>&nbsp;</p>
+<p class='titlep'>&nbsp;</p>
+<p class='titlep'>&nbsp;</p>
+<hr>
+<p style="font-size:35%;" align="left">
+How to download <a href="https://colab.research.google.com/drive/1MY_YLOhR5S-zPV0fS8uu0h2YilbNN2A1?usp=sharing">Link</a>  <br>Download avatar project <a href="https://drive.google.com/drive/folders/1P_eY76q9vec1NSEn9HUFsSsBbFa9spzM?usp=sharing">Link</a>
+</p>
+
+
+
+
+
+#### Speaking avatar - How to use colab
+
+<video width="1000" height="600" controls>
+  <source src="./videos/colab.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+
+#### Speaking avatar - How to import
+<video width="1000" height="600" controls>
+  <source src="./videos/import.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+#### Speaking avatar - How to import
+
+- How to uncompress [Link](https://colab.research.google.com/drive/1yPL8ltdCTBpDyFOrhYG8IQAieN1iu0VZ?usp=sharing)
+
+
+
+
+#### Speaking avatar - How to clone voice
+<video width="1000" height="600" controls>
+  <source src="./videos/clone.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+<p class='titlep'>&nbsp;</p>
+<div class="wrapper nine">
+        <div>
+            <h3 class="rotate">
+                <span>C</span>
+                <span>0</span>
+                <span>D</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+            </h3>
+        </div>
+</div>
+
+<div id="note">
+!gdown --id 1iBg6WfZUoxi_BaF4eNJNP8b9VCHFZLSN
+<div>
+
+
+<p class='titlep'>&nbsp;</p>
+<p class='titlep'>&nbsp;</p>
+<hr>
+<p style="font-size:35%;" align="left">
+How to download <a href="https://colab.research.google.com/drive/1ZvDtiFjHo8O1v55AUbzhdxA5FVnN7nyP?usp=sharing">Link</a>  <br>Download project <a href="https://drive.google.com/drive/folders/1DN9Q4y4O0OjEetyPQiE4L11ErBQaBi0W?usp=sharing">Link</a>
+</p>
+
+
+
+
+
+#### Speaking avatar - How to get Avatar
+<video width="1000" height="600" controls>
+  <source src="./videos/avatar.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+</textarea></section>
+
+</section>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+####  A Fall course - Work from Students 👍
+
+<video width="1000" height="600" controls>
+  <source src="./videos/students/clonevoice.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+</textarea></section>
+
+</section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+#### Avatar in presentation
+
+<img src="./images/zoom1.gif"  align="center" height="600" width="1000">
+
+</textarea></section>
+
+</section>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+####  A Fall course - Students like avatar 👍
+
+<video width="1000" height="600" controls>
+  <source src="./videos/students/avatarforslides.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+</textarea></section>
+
+</section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+#### Other optaional avatars
+
+<img src="images/zoom2.gif"  align="center" height="600" width="1000">
+
+
+
+
+
+#### Other optaional avatars
+
+<img src="./images/zoom3.gif"  align="center" height="600" width="1000">
+
+
+
+
+
+#### Other optaional avatars
+
+<video width="1000" height="600" controls>
+  <source src="./videos/zoom4.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+
+#### OBS Studio
+
+- Download OBS Studio [Link](https://obsproject.com/download)
+
+
+
+
+#### OBS Studio
+
+<img src="images/zoom5.gif"  align="center" height="600" width="1000">
+
+
+
+
+<div class="wrapper nine">
+        <div>
+            <h3 class="rotate">
+                <span>C</span>
+                <span>0</span>
+                <span>D</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+            </h3>
+        </div>
+</div>
+
+<div id="note">
+!gdown --id 1cdsZRZrn9X1eDAD6iN5tXmv4EG7v1a4y
+<div>
+
+<p class='titlep'>&nbsp;</p>
+<p class='titlep'>&nbsp;</p>
+<hr>
+<p style="font-size:35%;" align="left">
+How to download <a href="https://colab.research.google.com/drive/1W7y0GbOFmBAS3jIae8sLL4Wra30eR2qP?usp=sharing">Link</a><br>Download animation avatar project <a href="https://drive.google.com/drive/folders/15mmSQMz5jIxm8y0sP8hiP22KzVQNN7wN?usp=sharing">Link</a>
+</p>
+
+</textarea></section>
+
+</section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+#### A Fall course - Students' avatar 👍
+
+<video width="1000" height="600" controls>
+  <source src="./videos/students/anotheravatarforslides.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+</textarea></section>
+
+</section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+#### More optaional avatars
+
+<div>
+<img src="./images/not_found.jpg"  align="center" height="180" width="140">
+<img src="./images/turing.jpg"  align="center" height="180" width="140">
+<img src="./images/Newton.jpg"  align="center" height="180" width="220">
+<img src="./images/shakespeare.jpeg"  align="center" height="180" width="220">
+</div>
+
+<div class="popup" onclick="myFunction3()"><p class="blink" style="font-size:12px;"><spanBYMix>Note</spanBYMix></p> <span class="popuptext" id="myPopup3" STYLE="font-size:12px">From left to right: Alan Turing (June 23, 1912 - June 7, 1954) was a British mathematician and logician; Isaac Newton (December 25, 1642 – March 20, 1726) was an English physicist and mathematician; William Shakespeare (April 23, 1564 – April 23, 1616) was an English playwright, poet and actor.
+ </span></div> 
+
+<div>
+<video id="Avatar1" width="140" height="220" controls>
+  <source src="./videos/jue.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<video id="Avatar2" width="140" height="220" controls>
+  <source src="./videos/TuringSwaping.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<video id="Avatar3" width="230" height="180" controls>
+  <source src="./videos/Newton.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<video id="Avatar4" width="230" height="180" controls>
+  <source src="./videos/Shakespeare.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+  <br>
+
+  <button onclick="toggleAllAvatars()">Play/Pause All Videos</button>
+
+</div>
+
+</textarea></section>
+
+</section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+#### More optaional avatars
+
+<div>
+<img src="./images/facechange1.gif"  align="center" height="230" width="700">
+<img src="./images/facechange2.gif"  align="center" height="230" width="700">
+</div>
+
+<div class="popup" onclick="myFunction4()"><p class="blink" style="font-size:12px;"><spanBYMix>Note</spanBYMix></p> <span class="popuptext" id="myPopup4" STYLE="font-size:12px">From up to down: David Hilbert (January 23, 1862 - February 14, 1943) was a German mathematician; Georg Cantor (March 3, 1845 - January 6, 1918) was a German mathematician.</span></div> 
+
+
+</textarea></section>
+
+</section>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+
+  <video id="video2" width="350" height="290" controls>
+    <source src="./videos/hilbertVideo.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  <video id="video3" width="350" height="290" controls>
+    <source src="./videos/cantor.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  <video id="video1" width="350" height="290" controls>
+    <source src="./videos/me.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+
+  <button onclick="toggleVideos()">Play/Pause All Videos</button>
+
+
+
+
+
+<p class='titlep'>&nbsp;</p>
+
+<div class="wrapper nine">
+        <div>
+            <h3 class="rotate">
+                <span>C</span>
+                <span>0</span>
+                <span>D</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+            </h3>
+        </div>
+</div>
+
+<div id="note">
+!gdown --id 1qUnp92wmhV6QNufynLbBtEMnTrEPOKMh
+<div>
+
+<p class='titlep'>&nbsp;</p>
+<p class='titlep'>&nbsp;</p>
+<hr>
+<p style="font-size:35%;" align="left">
+How to download <a href="https://colab.research.google.com/drive/172evvKxQ9ka3ZxyzXEhCv034eyaAFhVN?usp=sharing">Link</a><br>Download face exchange project <a href="https://drive.google.com/drive/folders/16wAtx8Mu25a1CKi6FQ0N13UcVPWBHvoC?usp=sharing">Link</a>
+</p>
+
+</textarea></section>
+
+</section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+#### More optaional avatars
+
+[HelloMeme](https://github.com/HelloVision/HelloMeme)
+
+[AvaChat](https://github.com/Jaykef/AvaChat)
+
+[EmpathyEar](https://github.com/scofield7419/EmpathyEar/tree/main)
+
+[Future you](https://futureyou.media.mit.edu/)
+<hr>
+<p style="font-size:35%;" align="left">Note: More hardware requirement - GPU</p>
+
+</textarea></section>
+
+</section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown id="tool2" class="center"><textarea data-template>
+## Tool 2: Syllabus Singer
+
+</textarea></section>
+</section>
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+<p class='titlep'>&nbsp;</p>
+<p class='titlep'>&nbsp;</p>
+<p class='titlep'>&nbsp;</p>
+
+## Will students read syllabi?
+</textarea></section>
+
+</section>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+
+<figure>
+<img src="./images/SyllSubFigure1.jpeg"  align="center" height="250" width="230">
+<img src="./images/SyllSubFigure2.jpeg"  align="center" height="250" width="230">
+<img src="./images/SyllSubFigure3.jpeg"  align="center" height="250" width="230">
+<img src="./images/SyllSubFigure4.jpeg"  align="center" height="250" width="230">
+<img src="./images/readsyllabus.jpeg"  align="center" height="250" width="280">
+</figure>
+<hr>
+
+<p style="font-size:35%;" align="left">Generated by DALL-E</p>
+
+</textarea></section>
+</section>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+
+<iframe src=".\files\CSE150.pdf" style="border:5px solid yellow;" height="650" width="840" title="A summer course"></iframe>
+
+</textarea></section>
+</section>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+
+  <video id="video4" width="800" height="600" controls>
+    <source src="./videos/cse150.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+
+<hr>
+
+<p style="font-size:35%;" align="left">Background Image from <a href="https://www.midway.edu/news/2021/02-23-2021-midway-launching-computer-science-degree.html">Link</a> </p>
+</textarea></section>
+</section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+
+  <video id="video5" width="450" height="400" controls>
+    <source src="./videos/cse420.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+
+  <video id="video6" width="450" height="400" controls>
+    <source src="./videos/cs.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  
+
+<hr>
+
+<p style="font-size:35%;" align="left">Background Image from <a href="https://www.midway.edu/news/2021/02-23-2021-midway-launching-computer-science-degree.html">Link</a> </p>
+
+
+
+
+
+## Tool
+
+- [Suno](https://suno.com/) + [Clipchamp](https://clipchamp.com/en/)
+
+
+
+
+<img src="./images/sunoCopyright.jpg"  align="center" height="650" width="600">
+
+
+
+
+
+## Testing with Avatars
+
+  <video id="video7" width="400" height="400" controls>
+    <source src="./videos/Testing1.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+
+<hr>
+
+<p style="font-size:35%;" align="left">Background Images from <a href="https://www.midway.edu/news/2021/02-23-2021-midway-launching-computer-science-degree.html">Link a</a> and <a href="https://github.com/OpenTalker/SadTalker/tree/main/examples/source_image">Link b</a><br><br><spanBYMix>Not so good, needs more work here</spanBYMix></p>
+</textarea></section>
+</section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown id="pc" class="center"><textarea data-template>
+## Pros and cons
+
+</textarea></section>
+
+</section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+## ✔️ 
+
+<div id="note">
+Local, CPU-only, convenience-focused, open-source, low-environment requirement, efficient, real-time agent, security your personal information , your movie 
+</div>
+</textarea></section>
+
+</section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+
+<p class='titlep'>&nbsp;</p>
+<p class='titlep'>&nbsp;</p>
+
+## Will you love ChatGPT? ❤️
+
+
+
+
+
+## ❌
+
+<div id="note">
+Not perfect (cannot see each other; cannot sing - unable to image, video, transfer, and translation singing), cloud, GPU, Avatar's simulation is still weak, commercial, copyrights, not universal, virtual world and physical world are separate
+</div>
+
+<p class='titlep'>&nbsp;</p>
+
+<hr>
+
+<p style="font-size:35%;" align="left"><spanGreen>Slides can be downloaded from</spanGreen> <a href="https://drive.google.com/drive/folders/1VvR2Jac9i9qk17qpZjg6pmqSlcedM-UF?usp=sharing">Link</a> (Almost the same, but removes student work. Download link might become unavailable after 2 hours)</p>
+
+
+
+
+<ft1> CPU vs. GPU (Tesla T4, 15360 MiB, 15101 MiB)</ft1>
+
+<img src="images/avatartime.png"  align="center" height="250" width="800">
+
+<img src="images/gputime.png"  align="center" height="250" width="800">
+
+
+
+
+<video id="videogirl" width="365" height="650" controls>
+    <source src="./videos/girl.mp4" type="video/mp4">
+    <source src="girl.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+</video>
+<video id="videogirl" width="365" height="650" controls>
+    <source src="./videos/boy.mp4" type="video/mp4">
+    <source src="boy.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+</video>
+
+
+
+
+
+<ft1> Total time on GPU </ft1>
+
+<img src="images/gpufinaltime.png"  align="center" height="350" width="800">
+
+
+
+
+
+## ❌ 
+
+- Gradio https://www.gradio.app/
+
+- Singer more? https://github.com/suno-ai/bark  
+
+- Generate dance based on singing
+
+- SL ChatGPT: real-time text/audio $\leftrightarrow$ an SL [Paper](./files/sign.pdf),  https://sign.mt/ , https://github.com/tan-ad/SignWave , https://slait.ai/
+
+- <spanBYMix>Go in</spanBYMix> Web 3.0 ? [Metaverse](https://www.youtube.com/watch?v=jFUVZDPrB7U), <spanRED>Go out</spanRED> [Robot](https://www.youtube.com/watch?v=0MwiLIIWd-k)
+
+- [Inside the LLM black box](https://arxiv.org/pdf/2308.09124)
+
+
+
+
+
+<iframe width="300" height="534" src="https://www.youtube.com/embed/nzSjLUMPrIU" title="Robot Playing Pickleball with Humans, Who Wins? MOCAP Test | NOT Real | Wonder Studio Ai  #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="300" height="534" src="https://www.youtube.com/embed/DkP-fDHg4lI" title="I think I will buy this Elon musk robot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Maybe that day will come soon ...
+</textarea></section>
+
+</section>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+## ❌
+
+<div id="note">
+Finding AI’s world model lacking: Researchers found that despite its impressive output, generative AI models don’t have a coherent understanding of the world. Large language models don't form true models of the world and its rules, and can thus fail unexpectedly on similar tasks. <a href="https://arxiv.org/pdf/2406.03689">Link</a>
+</div>
+
+</textarea></section>
+
+</section>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section>
+
+<section data-markdown data-separator="^\n\n\n"><textarea data-template>
+
+<p class='titlep'>&nbsp;</p>
+<p class='titlep'>&nbsp;</p>
+
+
+## Some students' work
+
+#  🏆
+
+
+<p class='titlep'>&nbsp;</p>
+<p class='titlep'>&nbsp;</p>
+
+<hr>
+
+<p style="font-size:35%;" align="left">
+From Fall 2024 courses CSE-300 and CSE-410<br>
+Look forward to your comments and suggestions on the work of our students. Thanks!
+</p>
+
+
+
+
+<iframe src=".\examples\Students\BlueyMemoryGame\index.html" style="border:5px solid yellow;" height="600" width="900" title="A summer course"></iframe>
+
+[Link](./examples/Students/BlueyMemoryGame/index.html)
+
+
+
+
+
+<iframe src=".\examples\Students\Door\index.html" style="border:5px solid yellow;" height="600" width="900" title="A summer course"></iframe>
+
+[Link](./examples/Students/Door/index.html)
+
+
+
+
+
+<iframe src=".\examples\Students\BusCardProject\index.html" style="border:5px solid yellow;" height="600" width="900" title="A summer course"></iframe>
+
+[Link](./examples/Students/BusCardProject/index.html)
+
+
+
+
+<iframe src=".\examples\Students\PersonalWebsite\index.html" style="border:5px solid yellow;" height="600" width="900" title="A summer course"></iframe>
+
+[Link](./examples/Students/PersonalWebsite/index.html)
+
+
+
+
+<iframe src=".\examples\Students\HandWritingGenerator\index.html" style="border:5px solid yellow;" height="600" width="900" title="A summer course"></iframe>
+
+[Link](./examples/Students/HandWritingGenerator/index.html)
+
+
+
+
+<iframe src=".\examples\Students\OpenDoorProject\index.html" style="border:5px solid yellow;" height="600" width="900" title="A summer course"></iframe>
+
+[Link](./examples/Students/OpenDoorProject/index.html)
+
+
+
+<iframe src=".\examples\Students\Lab2_Counter3\index.html" style="border:5px solid yellow;" height="600" width="900" title="A summer course"></iframe>
+
+[Link](./examples/Students/Lab2_Counter3/index.html)
+
+
+
+
+<iframe src=".\examples\Students\Project1\index.html" style="border:5px solid yellow;" height="600" width="900" title="A summer course"></iframe>
+
+[Link](./examples/Students/Project1/index.html) <ft>username/password: <spanBYMix>Mobile Computing</spanBYMix>/<spanRED>CS 410</spanRED></ft>
+
+
+
+<iframe src=".\examples\Students\Project2\Guess2\index.html" style="border:5px solid yellow;" height="600" width="900" title="A summer course"></iframe>
+
+[Link](./examples/Students/Project2/Guess2/index.html)
+
+
+
+<iframe src=".\examples\Students\Project3\TodoList\index.html" style="border:5px solid yellow;" height="600" width="900" title="A summer course"></iframe>
+
+[Link](./examples/Students/Project3/TodoList/index.html)
+
+
+
+
+<div>
+
+<img style="border:5px solid yellow;" src="./images/Mobile1.gif"  align="center" height="550" width="300">
+<img style="border:5px solid yellow;" src="./images/Mobile2.gif"  align="center" height="550" width="300">
+</div>
+
+
+
+
+## Others
+
+- [Spin Wheel](./examples/Students/spinWheel/index.html)
+- [Guess a number](./examples/Students/Project2/Guess1/index.html)
+- [Timer](./examples/Students/FinalProject/index.html)
+- [Student Business Card Builder](./examples/Students/BusinessCard/index.html)
+- [Counter1](./examples/Students/Lab2_Counter1/index.html)
+- [Counter2](./examples/Students/Lab2_Counter2/index.html)
+- [Counter3](./examples/Students/Lab2_Counter4/index.html)
+- [Memeory Card](./examples/Students/ImprovedGame1/index.html)
+
+
+</textarea></section>
+
+</section>
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+</div>
+</div>
+	
+<script src="./reveal.js/dist/reveal.js"></script>
+<script src="./reveal.js/plugin/zoom/zoom.js"></script>
+<script src="./reveal.js/plugin/notes/notes.js"></script>
+<script src="./reveal.js/plugin/search/search.js"></script>
+<script src="./reveal.js/plugin/markdown/markdown.js"></script>
+<script src="./reveal.js/plugin/highlight/highlight.js"></script>
+<script src="./reveal.js/plugin/math/math.js"></script>
+<script src="./js/settings.js"></script>
+<script src="./js/myscript.js"></script>
+</body>
+</html>

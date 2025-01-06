@@ -1,0 +1,100 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+  display: grid;
+  height: auto;
+  place-items: center;
+  background-color: #a1ada3;
+  width: 100%;
+}
+.wrapper{
+  width: 30%;
+  height: 150%;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+  border: 12px solid #0156AB;
+  transform-style: preserve-3d;
+  transform: perspective(2500px);
+  z-index: 1;
+}
+
+.wrapper img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.left{
+	position: absolute;
+	margin-right:15%;
+	width: 25%;
+	top: 15%;
+	left: 7.5%;
+}
+.right{
+	position: absolute;
+	margin-left:15%;
+	width: 25%;
+	top: 15%;
+	right: 7.5%;
+}
+
+
+.header {
+	width: 100%;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+.round {
+	border-radius: 25%;	
+	width: 20%;
+}
+
+.pic {
+	border-radius: 5%;
+	width: 100%;
+}
+
+.door{
+  content: '';
+  position: absolute;
+  background-color: #0156AB;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #F3BF02;
+  transition: all 1s;
+}
+.door1{
+  left: 0;
+  top: 0;
+  transform-origin: left;
+  
+}
+.door2{
+  right: 0;
+  top: 0;
+  transform-origin: right;
+  
+}
+.wrapper:hover .door1{
+  transform: rotateY(-150deg);
+}
+.wrapper:hover .door2{
+  transform: rotateY(150deg);
+}
+.door .handle{
+  width: 5px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: #F3BF02;
+  position: absolute;
+  top: 45%;
+  right: 10px;
+}
+.door2 > .handle{
+  left: 10px;
+}

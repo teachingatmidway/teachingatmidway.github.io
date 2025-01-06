@@ -1,0 +1,1 @@
+In this project, I made some very minor adjustments to spice up the project. I added several extra colors, allowed the emails to be hyperlinked, and centered some of the information to streamline the site. Some animations could have been added, but, for the sake of simplicity, I omitted these adjustments.

@@ -1,0 +1,35 @@
+body{
+	background-image: url("./images/bg.jpg");
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.timer{
+	display: inline-block;
+	font-size: 200%;
+	border-spacing: 10px;
+}
+
+.box{
+	border: 4px solid white;
+	width: 22.5%;
+	padding: 3% 0 3% 0;
+}
+
+.font1{
+	font-family: cursive;
+	color: white;
+}
+
+.font2{
+	font-family: fantasy;
+	color: white;
+}
+
+.header{
+	margin-top: 13%;
+	font-size: 450%;
+	font-family: cursive;
+	color: white;
+}

@@ -1,0 +1,49 @@
+body {
+    background-color: #6a0dad; 
+    font-family: 'Creepster', cursive;
+    color: #ff7518;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: #ff7518;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 2em;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+#count {
+    font-size: 3em;
+    width: 100px;
+    display: inline-block;
+}

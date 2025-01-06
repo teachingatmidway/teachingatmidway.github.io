@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guess the Number Game</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="App">
+  <h1>Guess the Number Game</h1>
+
+  <!-- Start Game Form -->
+  <div id="start-form">
+    <input
+      type="text"
+      id="playername"
+      placeholder="Enter player name"
+    />
+    <button id="start-game-btn">Start Game</button>
+  </div>
+
+  <!-- Game Section -->
+  <div id="game-section" style="display:none;">
+    <div class="game">
+      <h2>Guess a number between 1 and 100</h2>
+
+      <div class="player-info">
+        <p><strong>Player:</strong> <span id="display-player"></span></p>
+        <p><strong>Hints:</strong> <span id="message"></span></p>
+        <p><strong>Attempts:</strong> <span id="attempts">0</span></p>
+        <p><strong>Time Left:</strong> <span id="time-left">30</span> seconds</p>
+      </div>
+
+      <div class="guess-form">
+        <input type="number" id="user-guess" placeholder="Enter your guess" min="1" max="100">
+        <button id="submit-guess-btn">Guess</button>
+      </div>
+
+      <div id="guess-history" class="guess-history"></div>
+      <button id="try-again-btn" class="try-again">Try Again</button>
+    </div>
+  </div>
+
+  <!-- Game History -->
+  <div id="history-section" class="history"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

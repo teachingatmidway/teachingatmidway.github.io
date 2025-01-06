@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To Do List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="App">
+  <div class="Container">
+    <h1>To Do List</h1>
+    <form id="task-form">
+      <input
+        type="text"
+        id="task-input"
+        placeholder="Task Name"
+      />
+      <button type="submit" id="start-recording">Start recording</button>
+    </form>
+
+    <!-- Display Game History -->
+    <div class="history" id="history-section" style="display: none;">
+      <h3>Game History:</h3>
+      <button id="clear-history" class="delete-button">Clear All History</button>
+      <div id="history-list"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

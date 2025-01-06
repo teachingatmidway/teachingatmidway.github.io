@@ -1,0 +1,102 @@
+/* General Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('./flower.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  border: 2px solid #004d40;
+  text-align: center;
+  background-color: #b899b5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+#feedback {
+  font-size: 20px;
+  color: #00796b;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#attempts {
+  color: #004d40;
+  font-size: 14px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #00796b;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00796b;
+  color: #e0f7fa;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+.delete-button {
+  background-color: #770014;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.history {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.confetti-piece {
+  width: 5px;
+  height: 15px;
+  background-color: #ff4081;
+  position: absolute;
+  top: 0;
+  left: var(--random-x);
+  animation: fall 2s linear infinite;
+  animation-delay: var(--random-delay);
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}

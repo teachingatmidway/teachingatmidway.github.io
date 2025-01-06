@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Timer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border: 0;
+      outline: 0;
+    }
+
+    body {
+      display: flex;
+      background-image: url('Time5.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      font-family: Arial, sans-serif;
+      flex-direction: column;
+    }
+
+    .interval {
+      background-image: url(./Timer.png);
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      max-width: 400px;
+      aspect-ratio: 3 / 1;
+    }
+
+    .interval>p {
+      font-family: number;
+      font-size: 5vw;
+      user-select: none;
+      text-align: center;
+      display: flex;
+    }
+
+    .interval>.black-text {
+      display: flex;
+      align-items: center;
+    }
+
+    .interval>.black-text>i {
+      font-style: normal;
+      color: rgba(255, 255, 255, .1);
+      text-shadow: 0 0 5px #031327;
+    }
+
+    .interval>.black-text>i.active {
+      color: white;
+      text-shadow: 0 0 5px #0078bc;
+    }
+
+    .interval>.black-text>span {
+      position: relative;
+      color: rgba(255, 255, 255, .1);
+      text-shadow: 0 0 5px #031327;
+    }
+
+    .interval>.black-text>span>span {
+      position: absolute;
+      color: white;
+    }
+
+    .interval>.black-text>span::after {
+      content: attr(data-number);
+      color: white;
+      position: absolute;
+      right: 0;
+      text-shadow: 0 0 5px #0078bc;
+    }
+
+    @font-face {
+      font-family: number;
+      src: url(./number-font.ttf);
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 1rem;
+      border-radius: 5px;
+      background-color: #0078bc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005f9a;
+    }
+
+    button:active {
+      background-color: #004b78;
+    }
+
+    .set-time {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .set-time input {
+      width: 60px;
+      padding: 5px;
+      font-size: 1rem;
+      text-align: center;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .set-time button {
+      padding: 10px 15px;
+      font-size: 1rem;
+      border-radius: 5px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .set-time button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Sound file to play on timer end -->
+  <audio id="alert-sound" src="Alarm2.mp3"></audio>
+
+  <div class="set-time">
+    <input type="number" id="set-hours" placeholder="HH" min="0">
+    <input type="number" id="set-minutes" placeholder="MM" min="0" max="59">
+    <input type="number" id="set-seconds" placeholder="SS" min="0" max="59">
+    <button onclick="setTime()">Set Time</button>
+  </div>
+
+  <div class="interval">
+    <p class="black-text" data-string="123">
+      <span>0</span>
+      <span>0</span>
+      <i class="hourse">:</i>
+      <span>0</span>
+      <span>0</span>
+      <i class="minutes">:</i>
+      <span>0</span>
+      <span>0</span>
+    </p>
+  </div>
+
+  <div class="controls">
+    <button onclick="adjustTime(10)">+10 sec</button>
+    <button onclick="adjustTime(-10)">-10 sec</button>
+    <button onclick="adjustTime(60)">+1 min</button>
+    <button onclick="adjustTime(-60)">-1 min</button>
+    <button onclick="togglePause()">
+      <span id="pause-play">Pause</span>
+    </button>
+    <!-- New Reset Button -->
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+
+  <script>
+    let toDate = new Date();
+    let defaultTime = 5 * 60 * 1000; // Default 5 minutes
+    toDate.setMinutes(toDate.getMinutes() + 5);
+
+    let paused = false;
+    let remainingTime = defaultTime;
+    let intervalId;
+
+    function startInterval() {
+      intervalId = setInterval(() => {
+        if (paused) return;
+        const res = getTimeArray(toDate);
+        if (!res) {
+          clearInterval(intervalId);
+          return;
+        }
+        document.querySelectorAll('.black-text>span').forEach((item, i) => {
+          item.setAttribute('data-number', res[i]);
+        });
+      }, 1000);
+    }
+
+    function adjustTime(seconds) {
+      remainingTime += seconds * 1000;
+      if (!paused) {
+        toDate = new Date(Date.now() + remainingTime);
+      }
+    }
+
+    function togglePause() {
+      const pausePlayButton = document.getElementById('pause-play');
+      if (paused) {
+        toDate = new Date(Date.now() + remainingTime);
+        pausePlayButton.innerText = 'Pause';
+      } else {
+        remainingTime = toDate.getTime() - Date.now();
+        pausePlayButton.innerText = 'Play';
+      }
+      paused = !paused;
+    }
+
+    function setTime() {
+      const hours = parseInt(document.getElementById('set-hours').value || 0);
+      const minutes = parseInt(document.getElementById('set-minutes').value || 0);
+      const seconds = parseInt(document.getElementById('set-seconds').value || 0);
+
+      const totalMilliseconds = (hours * 3600 + minutes * 60 + seconds) * 1000;
+      remainingTime = totalMilliseconds;
+      toDate = new Date(Date.now() + totalMilliseconds);
+
+      if (paused) {
+        paused = false;
+        document.getElementById('pause-play').innerText = 'Pause';
+      }
+    }
+
+    function getNumbers(str) {
+      const temp = String(str);
+      if (str >= 10) return temp.split('');
+      if (str === 0) return [0, 0];
+      return [0, temp];
+    }
+
+    function getTimeArray(times) {
+      const currDate = new Date();
+      const resTime = (times.getTime() - currDate.getTime()) / 1000;
+      if (resTime <= 0) {
+        // Play the sound when the timer finishes
+        document.getElementById('alert-sound').play();
+        clearInterval(intervalId);  // Stop the timer when it reaches zero
+        return null;
+      }
+
+      const hours = getNumbers(Math.floor(resTime / 3600));
+      const minutes = getNumbers(Math.floor((resTime % 3600) / 60));
+      const seconds = getNumbers(Math.floor(resTime % 60));
+      return [hours, minutes, seconds].flat();
+    }
+
+    function resetTimer() {
+      // Reset the timer to the initial set time (5 minutes)
+      remainingTime = defaultTime;
+      toDate = new Date(Date.now() + remainingTime);
+      if (paused) {
+        paused = false;
+        document.getElementById('pause-play').innerText = 'Pause';
+      }
+      startInterval(); // Restart the interval
+    }
+
+    startInterval();
+  </script>
+</body>
+
+</html>
